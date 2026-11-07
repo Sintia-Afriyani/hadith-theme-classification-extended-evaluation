@@ -1,0 +1,6 @@
+
+# Core dependencies for master_cv.py and common.py
+numpy
+pandas
+scipy
+scikit-learn
