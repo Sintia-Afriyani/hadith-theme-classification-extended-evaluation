@@ -1,0 +1,4 @@
+System,Precision_at_5,Strict_Precision_at_5,nDCG_at_5
+BM25,0.750,0.275,0.802
+BM25_hard_theme,0.750,0.300,0.749
+BM25_soft_theme,0.700,0.175,0.672
