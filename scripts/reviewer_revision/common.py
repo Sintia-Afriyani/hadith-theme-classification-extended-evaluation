@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Bagian bersama untuk analisis pada 1.323 hadis (v1.1)."""
-import re, warnings, numpy as np, pandas as pd
+import re, warnings, os, numpy as np, pandas as pd
 from scipy.sparse.csgraph import connected_components
 from sklearn.feature_extraction.text import TfidfVectorizer, ENGLISH_STOP_WORDS
 from sklearn.pipeline import Pipeline
@@ -10,7 +10,9 @@ from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.dummy import DummyClassifier
 warnings.filterwarnings("ignore")
 
-REPO = "/home/claude/sintia-afriyani/hadith-theme-classification-uad"
+REPO = os.path.abspath(os.path.join(
+    os.path.dirname(__file__), "..", "..", "data", "v1.1"
+))
 SEED, OUTER, INNER, NEARDUP_TH = 42, 5, 3, 0.80
 SOURCE_STOP = {"hasan","sahih","gharib","daif","eisa","isa","esa","hadith","pbuh","saws","saw","dawud","tradition",
                "traditions","version","versions","authority","chain","chains","narrator","narrators","transmitted",
