@@ -1,0 +1,5 @@
+Actual,Predicted_Purification,Predicted_Natural_Phenomena,Predicted_Food,Predicted_Medicine
+Purification,367,1,14,17
+Natural_Phenomena,3,172,1,7
+Food,22,1,358,17
+Medicine,16,1,23,303
